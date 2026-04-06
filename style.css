@@ -1,0 +1,195 @@
+/* Сброс стилей и база */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.5;
+  background-color: #f9fafb;
+  color: #111827;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Шапка и навигация */
+
+.header {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.header__title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.nav-menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.nav-menu__item {
+    /* пока пусто, но класс есть — готов к расширению */
+}
+
+.nav-menu__link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-menu__link:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* Секции и карточки */
+
+.section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.section__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2563eb;
+    padding-left: 0.75rem;
+}
+
+.section__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.section__text {
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skills-list__item {
+    background: #e5e7eb;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* Статья (проект) */
+
+.article {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.article__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.article__date {
+    display: block;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.article__description {
+    margin-bottom: 1rem;
+}
+
+.article__link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Боковая панель */
+
+.aside {
+    background: #f3f4f6;
+    border-left: 4px solid #2563eb;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.aside__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.aside__text {
+    margin-bottom: 0.5rem;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.footer__copyright {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer__contacts {
+    font-size: 0.875rem;
+}
+
+/* Адаптивность (медиа-запрос) */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .nav-menu__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .skills-list {
+        justify-content: center;
+    }
+}
