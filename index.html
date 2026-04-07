@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Урок 5</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Портфолио студента</h1>
+    </header>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">Главная</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">Обо мне</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="section">
+        <h2 class="section__title">О себе</h2>
+        <img
+          class="section__image"
+          src="recursosprogramadores.png"
+          alt="Иллюстрация к разделу о себе"
+          width="300"
+          height="150"
+        />
+        <p class="section__text">
+          Привет, Мир! Меня зовут Дмитрий. Я изучаю веб-серверную разработку.
+          Меня интересует создание приложений, для автоматизации процессов на
+          работе
+        </p>
+        <button id="helloButton">Показать приветствие</button>
+      </section>
+      <section class="section">
+        <h2 class="section__title">Мои навыки</h2>
+        <ul class="skills-list">
+          <li class="skills-list__item">HTML</li>
+          <li class="skills-list__item">CSS</li>
+          <li class="skills-list__item">JS</li>
+          <li class="skills-list__item">React (скоро)</li>
+        </ul>
+        <button id="lightButton">Подсветить навыки</button>
+      </section>
+      <article class="article">
+        <h2 class="article__title">Мой первый проект</h2>
+        <time class="article__date" datetime="2026-04-05"
+          >5 апреля 2026 года</time
+        >
+        <p class="article__description">
+          Это код моего первого проекта в рамках обучения. Я учусь использовать
+          семантические теги.
+        </p>
+        <a class="article__link" href="#">Посмотреть проект</a>
+      </article>
+    </main>
+    <aside class="aside">
+      <h3 class="aside__title">Интересный факт</h3>
+      <p class="aside__text">
+        Веб-разработка позволяет расширить мои профессиональные навыки и
+        применять их в моей сфере деятельности, повышая производительность труда
+      </p>
+    </aside>
+    <section class="section">
+      <h2 class="section__title">Цитата дня</h2>
+      <p id="quote-text">Блок для текста цитаты</p>
+      <p id="quote-author">Блок для автора</p>
+      <button id="fetch-quote-btn">Новая цитата</button>
+    </section>
+    <footer class="footer">
+      <small class="footer__copyright">© 2026, Дмитрий</small>
+      <p class="footer__contacts">Контакты: email@example.com</p>
+      <form id="subscribe-form">
+        <input
+          type="email"
+          id="user-email"
+          placeholder="Введите ваш email"
+          required
+        />
+        <button type="submit">Подписаться</button>
+      </form>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
